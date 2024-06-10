@@ -71,21 +71,33 @@ body {
 
 #pardot-form input, 
 #pardot-form select {
-    border-bottom: 2px solid #2E6BF0;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #efefef 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 2px solid #3D2589;
     border-radius: 8px 8px 0 0;
-    background: #efefef;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+#pardot-form input:focus-visible, 
+#pardot-form select:focus-visible {
+    border-bottom: 2px solid #2E6BF0;
+    outline: none;
+}
+
 
 #pardot-form button, #scroll_up_to_register {
     background-color: #2E6BF0 !important;
     border-radius: 8px !important;
     width: 100%;
     margin-top: 20px;
-}
-
-#pardot-form input:focus-visible, #pardot-form select:focus-visible {
-    border-bottom: 2px solid #2E6BF0;
-    outline: none;
 }
 
 #pardot-form input[type=checkbox] {
@@ -153,33 +165,8 @@ p {
     line-height: 1.5rem;
 }
 
-#pardot-form input, #pardot-form select {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-weight: 400;
-    line-height: 1.5;
-    background: #EFEFEF 0% 0% no-repeat padding-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
 
-#pardot-form input, #pardot-form select {
-    border: none;
-}
 
-#pardot-form input, #pardot-form select {
-    border-bottom: 2px solid #3D2589;
-    border-radius: 8px 8px 0 0;
-    background: #efefef;
-}
-
-#pardot-form input:focus-visible, #pardot-form select:focus-visible {
-    border-bottom: 2px solid #2E6BF0;
-    outline: none;
-}
 
 
 @media all and (max-width: 992px) {
